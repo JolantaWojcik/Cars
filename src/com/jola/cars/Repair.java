@@ -1,4 +1,4 @@
-import java.util.Date;
+package com.jola.cars;
 
 public class Repair {
 	
@@ -15,7 +15,6 @@ public class Repair {
 	
 	public Repair(int yearOfService, int monthOfService, int dayOfService, String serviceOperations, double price,
 			String mechanic) {
-		super();
 		this.yearOfService = yearOfService;
 		this.monthOfService = monthOfService;
 		this.dayOfService = dayOfService;

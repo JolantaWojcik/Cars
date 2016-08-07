@@ -1,8 +1,8 @@
+package com.jola.cars;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
-public class Car {
+public class Car{
 	/*Stworz relacje jeden - do - wiele miêdzy klas¹ Car oraz Repair 
 	 * (samochód mo¿e mieæ wiele napraw, naprawa dotyczy zawsze jednego samochodu) 
 	 * - mamy tu zatem kompozycje - naprawa nie mo¿e istnieæ bez samochodu i nie mo¿e byæ wspó³dzielona miêdzy samochodami.
@@ -13,8 +13,9 @@ public class Car {
 	private String model;
 	private int mileage;
 	
+	public Car() {
+	}	
 	public Car(int year_of_production, String model, int mileage) {
-		super();
 		this.repairs = new ArrayList<>();
 		this.year_of_production = year_of_production;
 		this.model = model;
@@ -93,6 +94,4 @@ public class Car {
 	public String toString() {
 		return "Car [year_of_production=" + year_of_production + ", model=" + model + ", mileage=" + mileage + "]";
 	}
-
-	
 }
